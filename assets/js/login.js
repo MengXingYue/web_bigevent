@@ -72,7 +72,10 @@ $(function() {
                     return layer.msg('登陆失败')
                 } else {
                     layer.msg('登陆成功')
+                        // 将登录成功得到的 token 字符串，保存到 localStorage 中
+                    localStorage.setItem('token', res.token)
                         // 将登陆成功的token字符串，保存到localStorage中
+                        // localStorage.removeItem()
                         // localStorage.setItem('token,res.token')
                         // console.log(res.token)
                         //     // 跳转到后台
