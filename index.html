@@ -24,14 +24,14 @@
                 <li class="layui-nav-item layui-hide layui-show-md-inline-block">
                     <!-- 头像部分代码 -->
                     <a href="javascript:;" class="userinfo">
-                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <img src="/http://t.cn/RCzsdCq" class="layui-nav-img">
                         <!-- 模拟文字头像 -->
                         <span class="text-avatar">A</span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user_avatar.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
@@ -46,7 +46,7 @@
             <div class="layui-side-scroll">
                 <!-- 左侧头像代码 -->
                 <div class="userinfo">
-                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    <img src="/http://t.cn/RCzsdCq" class="layui-nav-img">
                     <!-- 模拟文字头像 -->
                     <span class="text-avatar">A</span>
                     <span id="welcome"> 欢迎***</span>
@@ -75,13 +75,13 @@
                         <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
                             <dd>
-                                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 基本资料</a>
+                                <a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i> 基本资料</a>
                             </dd>
                             <dd>
-                                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 更换头像</a>
+                                <a href="/user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i> 更换头像</a>
                             </dd>
                             <dd>
-                                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 重置密码</a>
+                                <a href="/user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i> 重置密码</a>
                             </dd>
                         </dl>
                     </li>
@@ -105,11 +105,7 @@
     <!-- 导入JQUery样式 -->
     <script src="/assets/lib/jquery.js"></script>
     <!-- 引入axios.js文件 -->
-    <script src="httlayer.confirm('is not?', {icon: 3, title:'提示'}, function(index){
-  //do something
-  
-  layer.close(index);
-});ps://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- 导入自己封装的baseApi.js -->
     <script src="/assets//js/baseApi.js"></script>
     <!-- 导入自己的jquery样式 -->
